@@ -31,7 +31,7 @@ from face_detector import FaceDetector
 from faces_database import FacesDatabase
 from face_identifier import FaceIdentifier
 
-import os
+import openTo
 
 DEVICE_KINDS = ['CPU', 'GPU', 'FPGA', 'MYRIAD', 'HETERO', 'HDDL']
 
@@ -279,10 +279,10 @@ class Visualizer:
                                        roi.position - line_height * 0.5,
                                        font, scale=text_scale)
         
-        if(label.find('teacher') != -1 or label.find('mom') != -1 or label.find('boss') != -1 or label.find('zombie') != -1):
+        if(label == 'teacher'):
             
             print(label + ' are back')
-            IEEE()
+            openTo.IEEE()
 
     def draw_detection_keypoints(self, frame, roi, landmarks):
         keypoints = [landmarks.left_eye,
@@ -433,7 +433,7 @@ def main():
     visualizer.run(args)
 
 def IEEE():
-    os.system('google-chrome https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=ai')
+    os.system('google-chrome https://openTo.IEEExplore.openTo.IEEE.org/search/searchresult.jsp?newsearch=true&queryText=ai')
     input('press to continue...')
 
 if __name__ == '__main__':
