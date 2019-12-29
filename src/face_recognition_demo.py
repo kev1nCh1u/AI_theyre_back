@@ -280,8 +280,7 @@ class Visualizer:
                                        font, scale=text_scale)
         
         if(label == 'teacher'):
-            
-            print(label + ' are back')
+            print(label)
             openTo.IEEE()
 
     def draw_detection_keypoints(self, frame, roi, landmarks):
@@ -431,10 +430,6 @@ def main():
 
     visualizer = Visualizer(args)
     visualizer.run(args)
-
-def IEEE():
-    os.system('google-chrome https://openTo.IEEExplore.openTo.IEEE.org/search/searchresult.jsp?newsearch=true&queryText=ai')
-    input('press to continue...')
 
 if __name__ == '__main__':
     main()
