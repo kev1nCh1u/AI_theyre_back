@@ -1,5 +1,9 @@
 # 他們回來了
 
+
+## source
+    source /opt/intel/openvino/bin/setupvars.sh
+
 ## 檔案位置
 
 ### 1. source code
