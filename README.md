@@ -1,5 +1,6 @@
 # 他們回來了
 
+https://www.youtube.com/watch?v=_1UJw3CuxbY&ab_channel=%E9%9B%BB%E6%A9%9F%E5%B7%A5%E7%A8%8B%E7%B3%BBKevin01yaya
 
 ## source
     source /opt/intel/openvino/bin/setupvars.sh
